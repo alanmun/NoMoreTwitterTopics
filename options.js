@@ -15,7 +15,7 @@ function restore_options() {
     chrome.storage.sync.get({
         isHidden: true
     }, function(items) {
-        document.getElementById('isHidden').checked = items.isHidden;
+        document.getElementById('hiddenTopic').checked = items.isHidden;
     });
 }
 
