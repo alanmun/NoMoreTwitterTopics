@@ -1,0 +1,13 @@
+{
+  "name": "No More Twitter Topics",
+  "description": "Automatically tells twitter you are not interested in Twitter topics.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs"]
+}
